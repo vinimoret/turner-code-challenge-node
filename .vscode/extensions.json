@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "eg2.tslint",
+    "msjsdiag.debugger-for-chrome",
+    "formulahendry.auto-complete-tag",
+    "infeng.vscode-react-typescript"
+  ]
+}

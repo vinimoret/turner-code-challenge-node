@@ -1,0 +1,52 @@
+scalar Date
+
+type Query {
+  titles(skip: Int!, pageSize: Int!, searchText: String): TitleList
+  titleById(id: String!): Title
+}
+
+type TitleList {
+  payload: [Title!]
+  totalRows: Int!
+}
+
+type Title {
+  _id: String
+  Awards: [Awards]
+  Genres: [String]
+  OtherNames: [OtherNames]
+  Participants: [Participants]
+  ReleaseYear: Int
+  Storylines: [Storylines]
+  TitleName: String
+}
+
+type Awards {
+  AwardWon: Boolean
+  AwardYear: Int
+  Participants: [String]
+  Award: String
+  AwardCompany: String
+}
+
+type OtherNames {
+  TitleNameLanguage: String
+  TitleNameType: String
+  TitleNameSortable: String
+  TitleName: String
+}
+
+type Participants {
+  IsKey: Boolean
+  RoleType: String
+  IsOnScreen: Boolean
+  ParticipantType: String
+  Name: String
+  ParticipantId: Int
+}
+
+type Storylines {
+  Description: String
+  Language: String
+  Type: String
+}

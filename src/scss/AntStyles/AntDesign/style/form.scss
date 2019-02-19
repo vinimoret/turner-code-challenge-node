@@ -1,0 +1,56 @@
+// Import mixins from "core" module
+@import '../../../mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  ANT DESIGN FORM */
+
+.ant-form-item-label {
+  text-align: left;
+}
+
+.ant-form-item > .ant-form-item,
+.ant-form-item :not(.ant-form) > .ant-form-item {
+  margin-top: -2px;
+}
+
+form .ant-select:only-child,
+form .ant-cascader-picker:only-child {
+  display: inline-block;
+}
+
+form {
+  .ant-row {
+    &.ant-form-item {
+      margin-bottom: 10px;
+
+      .ant-form-item-control {
+        line-height: normal;
+
+        .ant-form-explain {
+          margin-top: 3px;
+          margin-left: 3px;
+        }
+
+        .form-label {
+          margin-left: 3px;
+        }
+      }
+    }
+  }
+  .form-actions {
+    border-top: none;
+    padding: 0;
+  }
+}
+
+.has-success.has-feedback .ant-form-item-children:after,
+.has-warning.has-feedback .ant-form-item-children:after,
+.has-error.has-feedback .ant-form-item-children:after,
+.is-validating.has-feedback .ant-form-item-children:after {
+  right: 13px;
+  width: 13px;
+  height: 13px;
+  margin-top: -12px;
+  font-size: 16px;
+  background-color: $white;
+}

@@ -1,0 +1,53 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true, // only if you want auto fomattting on saving the file
+  "editor.detectIndentation": true,
+  "javascript.validate.enable": false,
+  "html.format.wrapLineLength": 0,
+  "workbench.activityBar.visible": true,
+  "explorer.openEditors.visible": 15,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.js": {
+      "when": "$(basename).ts"
+    },
+    "**/**.js": {
+      "when": "$(basename).tsx"
+    }
+  },
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  "editor.codeLens": true,
+  "editor.renderWhitespace": "none",
+  "cSpell.userWords": ["antd", "anticon"],
+  "git.autofetch": true,
+  "cSpell.enabledLanguageIds": [],
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "editor.minimap.enabled": true,
+  "editor.renderControlCharacters": false,
+  "editor.formatOnSave": true,
+  "explorer.confirmDragAndDrop": false,
+  "javascript.updateImportsOnFileMove.enabled": "prompt",
+  "typescript.updateImportsOnFileMove.enabled": "prompt",
+  "window.zoomLevel": 0,
+  "gitlens.views.repositories.location": "gitlens",
+  "gitlens.views.fileHistory.location": "gitlens",
+  "gitlens.views.lineHistory.location": "gitlens",
+  "gitlens.views.compare.location": "gitlens",
+  "gitlens.views.search.location": "gitlens",
+  "cSpell.words": ["browserslist", "luxon"],
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "prettier.printWidth": 140,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5"
+}

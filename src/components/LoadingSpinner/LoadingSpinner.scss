@@ -1,0 +1,28 @@
+@import '../../scss/mixins';
+
+.ant-spin {
+  i.anticon.ant-spin-dot {
+    color: $brand-primary !important;
+    font-size: 36px;
+    margin: -36px -18px -18px !important;
+  }
+
+  .ant-spin-text {
+    color: $brand-primary !important;
+    font-weight: 700;
+  }
+}
+
+.ant-spin-nested-loading {
+  > div {
+    > .ant-spin {
+      max-height: none;
+    }
+  }
+}
+
+.ant-spin-container {
+  &.ant-spin-blur {
+    opacity: 0.3;
+  }
+}
